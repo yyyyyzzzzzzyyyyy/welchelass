@@ -1,0 +1,246 @@
+/* =====================
+   BASE
+===================== */
+
+body {
+  margin: 0;
+  padding: 40px;
+  background: radial-gradient(circle at top, #141414, #070707 70%);
+  color: #eaeaea;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+/* =====================
+   LISTA DE CANCIONES
+===================== */
+
+.track {
+  display: flex;
+  gap: 20px;
+  padding: 28px;
+  margin-bottom: 22px;
+  background: linear-gradient(180deg, #0f0f0f, #0a0a0a);
+  border-radius: 14px;
+  border: 1px solid #1f1f1f;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.track img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+}
+
+/* =====================
+   BOTÓN PLAY
+===================== */
+
+.play-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #1aff9c, #00c97b);
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26,255,156,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(26,255,156,0.7);
+}
+
+/* =====================
+   INFO
+===================== */
+
+.track-info {
+  flex: 1;
+}
+
+.track-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* =====================
+   ETIQUETAS
+===================== */
+
+.badges {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.badge.interest {
+  background: #ffffff;
+  color: #000;
+}
+
+.badge.listen {
+  background: linear-gradient(135deg, #1aff9c, #00ffcc);
+  color: #000;
+}
+
+.badge.status {
+  background: linear-gradient(135deg, #ffcf4d, #c89b1d);
+  color: #000;
+}
+
+/* =====================
+   METADATA
+===================== */
+
+.track-meta {
+  font-size: 13px;
+  color: #bfbfbf;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.track-meta strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* =====================
+   CONTEXTO
+===================== */
+
+.context-box {
+  border: 2px solid #1aff9c;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(26,255,156,0.05), rgba(0,0,0,0));
+}
+
+.context-title {
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #1aff9c;
+}
+
+/* =====================
+   NOTA
+===================== */
+
+.note-box {
+  background: linear-gradient(180deg, #111, #0b0b0b);
+  border-left: 4px solid #ffffff;
+  padding: 10px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+/* =====================
+   REPRODUCTOR
+===================== */
+
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #111, #070707);
+  border-top: 1px solid #222;
+  padding: 12px 18px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.8);
+}
+
+#player img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.player-info {
+  flex: 1;
+}
+
+#player-title {
+  font-size: 14px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+/* =====================
+   CONTROLES
+===================== */
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-controls button {
+  background: none;
+  border: 1px solid #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.player-controls button:hover {
+  background: #1aff9c;
+  color: #000;
+  transform: scale(1.1);
+}
+
+#progress {
+  flex: 1;
+  accent-color: #1aff9c;
+}
+
+#volume {
+  width: 90px;
+  accent-color: #1aff9c;
+}
+
+/* =====================
+   UTIL
+===================== */
+
+.hidden {
+  display: none;
+}
