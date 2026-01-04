@@ -1,0 +1,80 @@
+body {
+  background: #0b0b0b;
+  color: #eaeaea;
+  font-family: system-ui, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  letter-spacing: 4px;
+}
+
+.guide {
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 50px;
+  background: #0f0f0f;
+}
+
+.guide-section {
+  margin-bottom: 20px;
+}
+
+.guide-section h3 {
+  color: #1aff9c;
+  margin-bottom: 6px;
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  background: #111;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.track img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.track-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.context-box {
+  border: 2px solid #1aff9c;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.play-btn {
+  background: #1aff9c;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  border-top: 1px solid #222;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.hidden {
+  display: none;
+}

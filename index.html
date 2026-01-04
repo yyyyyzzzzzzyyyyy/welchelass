@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>WELXOLAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>WELXOLAS</h1>
+
+<!-- ================= GUÍA ================= -->
+<section class="guide">
+  <h2>GUÍA DE ETIQUETAS</h2>
+
+  <div class="guide-section">
+    <h3>TIPO DE INTERÉS</h3>
+    <p><strong>Seguro te gusta:</strong> escucha obligatoria, te va a gustar sí o sí.</p>
+    <p><strong>Tal vez te interesa:</strong> punto medio que no supe categorizar con precisión según tus gustos.</p>
+    <p><strong>Relleno:</strong> puede ser repetitiva o poco interesante, pero quizá vale la pena escuchar fragmentos.</p>
+    <p><strong>Ya lo escuchaste:</strong> el nombre lo dice todo.</p>
+  </div>
+
+  <div class="guide-section">
+    <h3>FORMA RECOMENDADA DE ESCUCHAR</h3>
+    <p><strong>Canción completa:</strong> escuchar de inicio a fin sin saltar.</p>
+    <p><strong>Punto medio:</strong> escuchar hasta que pase su clímax o te aburra.</p>
+    <p><strong>Tú decides:</strong> puede gustarte mucho o aburrirte, decide libremente.</p>
+    <p><strong>Salteada:</strong> escuchar fragmentos rápidos para tantear el sonido.</p>
+  </div>
+
+  <div class="guide-section">
+    <h3>ESTADO</h3>
+    <p><strong>Filtrada:</strong> existe públicamente y puede ser relativamente conocida.</p>
+    <p><strong>Filtrada pero rara:</strong> está en la web pero es poco conocida o difícil de conseguir.</p>
+    <p><strong>Exclusiva:</strong> no publicada oficialmente.</p>
+    <p><strong>Full inédito:</strong> completamente inédita o solo con versiones parciales.</p>
+  </div>
+</section>
+
+<!-- ================= CANCIONES ================= -->
+<div id="tracks"></div>
+
+<!-- ================= REPRODUCTOR ================= -->
+<div id="player" class="hidden">
+  <img id="player-img">
+  <div class="player-info">
+    <div id="player-title"></div>
+    <input id="progress" type="range" min="0" max="100" value="0">
+  </div>
+
+  <div class="player-controls">
+    <button id="back10">⏪ 10s</button>
+    <button id="playPause">⏸</button>
+    <button id="forward10">⏩ 10s</button>
+    <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+  </div>
+</div>
+
+<audio id="audio"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
