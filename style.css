@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Sales Final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="no-scroll-bar">
+  <div class="content">
+
+    <section>
+      <h2>ALL SALES FINAL</h2>
+      <p>
+        All sales are final due to the low cost of goods. We do not offer
+        returns or exchanges. Please review your order carefully before
+        completing your purchase.
+      </p>
+    </section>
+
+    <section>
+      <h2>ORDER ISSUES</h2>
+      <p>
+        If an item is incorrect or defective, email us at contact@yeezy.com
+        and we will take responsibility and resolve it promptly.
+      </p>
+      <p>
+        Please include your order number and a brief description.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>
