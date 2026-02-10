@@ -1,0 +1,64 @@
+/* Variables extraídas del código original */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --text-color: #000;
+  --bg-color: #fff;
+}
+
+/* Reset mínimo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Contenedor principal */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Bloque de texto */
+.content {
+  width: 100%;
+  max-width: 720px;
+  padding: 120px 24px;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-size: 13px;
+}
+
+/* Títulos */
+.title {
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* Párrafos */
+.content p {
+  margin-bottom: 24px;
+}
+
+/* Espacio extra entre bloques */
+.spacer {
+  margin-bottom: 40px;
+}
+
+/* Links (idéntico: sin subrayado, mismo color) */
+a {
+  color: inherit;
+  text-decoration: none;
+}
