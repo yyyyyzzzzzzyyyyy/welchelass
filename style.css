@@ -1,0 +1,41 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+/* Contenedor */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+/* Texto general */
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* Títulos */
+.title {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
